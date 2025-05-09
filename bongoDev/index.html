@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My first web page</title>
 
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -84,32 +84,42 @@
     </div>
 
     <div class="box">
-      <!-- Ordered list -->
-      <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ol>
-
-      <!-- Unordered list -->
-      <ul>
-        <li>DevOps</li>
-        <li>Machine Learning</li>
-        <li>Fullstack Software Engineering</li>
-      </ul>
-
-      <!-- Description list -->
-      <!-- <dl>
-        <dt>DevOps</dt>
-        <dd>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops).</dd>
-        <dt>Machine Learning</dt>
-        <dd>Machine learning is a subset of artificial intelligence that focuses on building systems that learn from
-          data.
-        </dd>
-        <dt>Fullstack Software Engineering</dt>
-        <dd>Fullstack software engineering refers to the development of both front-end and back-end portions of web
-          applications.</dd>
-      </dl> -->
+      <!-- table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Framework</th>
+            <th>Library</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Django</td>
+            <td>Pandas</td>
+          </tr>
+          <tr>
+            <td rowspan="2">JavaScript</td>
+            <td>React</td>
+            <td>jQuery</td>
+          </tr>
+          <tr>
+            <td>Angular</td>
+            <td>Vue</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Spring</td>
+            <td>Hibernate</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
     <div class="box">
       <!-- Ordered list -->
