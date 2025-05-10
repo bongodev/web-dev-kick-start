@@ -5,22 +5,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My first web page</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-  <h1>Hello world!</h1>
-  <h2>Hello world!</h2>
-  <h3>Hello world!</h3>
-  <h4>Hello world!</h4>
-  <h5>Hello world!</h5>
-  <h6>Hello world!</h6>
+  <div class="box flex-box">
+    <div class="box">
+      <!-- Text elements -->
+      <h1>Hello world!</h1>
+      <h2>Hello world!</h2>
+      <h3>Hello world!</h3>
+      <h4>Hello world!</h4>
+      <h5>Hello world!</h5>
+      <h6>Hello world!</h6>
 
-  <p>This is a <strong>strong</strong> paragraph.</p>
-  <p>This is a <em>emphasized</em> paragraph.</p>
-  <p>This is a <mark>marked</mark> paragraph.</p>
-  <p>This is a <small>small</small> paragraph.</p>
-  <p>This is a <del>deleted</del> paragraph.</p>
-  <p>This is a <ins>inserted</ins> <u>Underlined</u> paragraph.</p>
+      <p>This is a <strong>strong</strong> paragraph.</p>
+      <p>This is a <em>emphasized</em> paragraph.</p>
+      <p>This is a <mark>marked</mark> paragraph.</p>
+      <p>This is a <small>small</small> paragraph.</p>
+      <p>This is a <del>deleted</del> paragraph.</p>
+      <p>This is a <ins>inserted</ins> <u>Underlined</u> paragraph.</p>
+    </div>
+
+    <div class="box">
+      <!-- Ordered list -->
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+
+      <!-- Unordered list -->
+      <ul>
+        <li>DevOps</li>
+        <li>Machine Learning</li>
+        <li>Fullstack Software Engineering</li>
+      </ul>
+
+      <!-- Description list -->
+      <!-- <dl>
+        <dt>DevOps</dt>
+        <dd>DevOps is a set of practices that combines software development (Dev) and IT operations (Ops).</dd>
+        <dt>Machine Learning</dt>
+        <dd>Machine learning is a subset of artificial intelligence that focuses on building systems that learn from
+          data.
+        </dd>
+        <dt>Fullstack Software Engineering</dt>
+        <dd>Fullstack software engineering refers to the development of both front-end and back-end portions of web
+          applications.</dd>
+      </dl> -->
+    </div>
+
+    <div class="box" style="height: 300px;">
+      <!-- links -->
+      <ul>
+        <li>
+          <!-- link -->
+          <a href="https://www.bongodev.com">BongoDev</a>
+        </li>
+        <li>
+          <a href="https://www.google.com" target="_blank">Google</a>
+        </li>
+        <li>
+          <!-- link to local page -->
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <!-- Email link -->
+          <a href="mailto:support@bongodev.com">Contact</a>
+        </li>
+        <li>
+          <!-- Phone link -->
+          <a href="tel:+1234567890">Call us</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="box">
+      <!-- table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Language</th>
+            <th>Framework</th>
+            <th>Library</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Django</td>
+            <td>Pandas</td>
+          </tr>
+          <tr>
+            <td rowspan="2">JavaScript</td>
+            <td>React</td>
+            <td>jQuery</td>
+          </tr>
+          <tr>
+            <td>Angular</td>
+            <td>Vue</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Spring</td>
+            <td>Hibernate</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Total</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="box">
+      <div class="box">
+        <!-- Multimedia elements -->
+        <img src="https://www.bongodev.com/bongodev-logo.svg" alt="BongoDev Logo" height="100" width="100"
+          title="bongoDev" />
+
+        <a href="https://www.bongodev.com" target="_blank">
+          <img src="./assets/images/bongodev-logo.svg" alt="BongoDev Logo" height="100" width="100" title="bongoDev" />
+        </a>
+      </div>
+    </div>
+
+    <div class="box flex-box" style="flex-direction: column;">
+      <!-- Video -->
+      <video width="320" height="240" controls>
+        <source src="./assets/videos/test-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Audio -->
+      <audio controls>
+        <source src="./assets/audios/test-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="box flex-box">
+      <!-- iframe -->
+      <iframe src="https://www.bongodev.com" width="300" height="200" title="BongoDev"></iframe>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Cqz98Fq7hiI?si=fN_nLa6ltCOgkBvY"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116820.3247976818!2d90.3325644200326!3d23.79600322451669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c74ecf8548bf%3A0x3ebb5b921e528ab!2sBangladesh%20Air%20Force%20Museum!5e0!3m2!1sen!2sbd!4v1746809446081!5m2!1sen!2sbd"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
 </body>
 
 </html>
